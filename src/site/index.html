@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hung.dev portfolio concept inspired by thatcherdev.id.vn with a dark editorial landing page, featured work, stack, timeline, and contact."
+    />
+    <title>Hung.dev | Frontend Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress">
+      <span class="scroll-progress__bar"></span>
+    </div>
+
+    <div class="scene-backdrop" aria-hidden="true">
+      <div class="scene-backdrop__layer scene-backdrop__layer--hero"></div>
+      <div class="scene-backdrop__layer scene-backdrop__layer--stack"></div>
+      <div class="scene-backdrop__layer scene-backdrop__layer--projects"></div>
+      <div class="scene-backdrop__layer scene-backdrop__layer--journey"></div>
+      <div class="scene-backdrop__layer scene-backdrop__layer--contact"></div>
+    </div>
+
+    <div class="page-shell" data-scene-active="hero">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="site-header__brand" href="#hero">Nguyen Van Thanh Hung</a>
+          <nav class="site-header__links" aria-label="Primary">
+            <a class="site-header__link" href="#hero">Home</a>
+            <a class="site-header__link" href="#tech">Stack</a>
+            <a class="site-header__link" href="#projects">Projects</a>
+            <a class="site-header__link" href="#journey">Experience</a>
+            <a class="site-header__link" href="#contact">Contact</a>
+          </nav>
+          <button class="site-header__mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+            Menu
+          </button>
+        </div>
+        <div class="site-header__mobile-panel" id="mobile-nav" hidden>
+          <a class="site-header__link" href="#hero">Home</a>
+          <a class="site-header__link" href="#tech">Stack</a>
+          <a class="site-header__link" href="#projects">Projects</a>
+          <a class="site-header__link" href="#journey">Experience</a>
+          <a class="site-header__link" href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="hero-section scene-section" id="hero" data-scene="hero">
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <div class="hero-meta">
+                <span>Frontend-focused engineer</span>
+                <span class="hero-meta__dot"></span>
+                <span>React, UI systems, product work</span>
+              </div>
+              <h1 class="hero-title">
+                Designing frontend
+                products that feel
+                clear and reliable.
+              </h1>
+              <p class="hero-summary">
+                I focus on frontend engineering, especially React interfaces that need to stay readable, responsive,
+                and easy to scale as products grow.
+              </p>
+              <ul class="hero-points">
+                <li>Frontend-first execution with a clear product mindset</li>
+                <li>Responsive layouts for desktop and mobile</li>
+                <li>Clean delivery with a lightweight Node local setup</li>
+              </ul>
+              <div class="button-row">
+                <a class="button-link button-link--primary" href="#projects">View projects</a>
+                <a class="button-link button-link--secondary" href="#contact">Contact me</a>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal">
+              <article class="portrait-card">
+                <div class="portrait-card__glow"></div>
+                <div class="portrait-card__screen">
+                  <img class="portrait-card__image" src="./assets/profile.png" alt="Portrait of Hung standing at a mountain viewpoint" />
+                  <div class="portrait-card__overlay">
+                    <div class="portrait-card__chip"></div>
+                    <h2>Hung</h2>
+                    <p>Frontend engineer building polished interfaces with strong structure, clarity, and visual control.</p>
+                    <div class="portrait-card__stats">
+                      <div>
+                        <strong>12+</strong>
+                        <span>components</span>
+                      </div>
+                      <div>
+                        <strong>5</strong>
+                        <span>sections</span>
+                      </div>
+                      <div>
+                        <strong>100%</strong>
+                        <span>custom CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section scene-section" id="tech" data-scene="stack">
+          <div class="section-heading reveal">
+            <span class="section-heading__eyebrow">Core Stack</span>
+            <h2 class="section-heading__title">The stack I use to build frontend products well.</h2>
+            <p class="section-heading__description">
+              React first, with backend and AI tooling as support when the interface needs them.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-card__head">
+                <span class="skill-card__icon">UI</span>
+                <div>
+                  <h3>Visual Frontend</h3>
+                  <p>Responsive interfaces, strong typography, clean spacing, and polished product presentation.</p>
+                </div>
+              </div>
+              <div class="chip-list">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">Responsive</span>
+                <span class="chip">ReactJS</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__head">
+                <span class="skill-card__icon">JS</span>
+                <div>
+                  <h3>Interaction Layer</h3>
+                  <p>Scroll states, reveal motion, section awareness, mobile navigation, and lightweight interactions.</p>
+                </div>
+              </div>
+              <div class="chip-list">
+                <span class="chip">Vanilla JS</span>
+                <span class="chip">IntersectionObserver</span>
+                <span class="chip">Smooth Scroll</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__head">
+                <span class="skill-card__icon">ND</span>
+                <div>
+                  <h3>Node Delivery</h3>
+                  <p>Simple delivery without heavy overhead, using a small Node HTTP server for fast local preview.</p>
+                </div>
+              </div>
+              <div class="chip-list">
+                <span class="chip">Node.js</span>
+                <span class="chip">HTTP</span>
+                <span class="chip">Static Hosting</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-section scene-section" id="projects" data-scene="projects">
+          <div class="section-heading reveal">
+            <span class="section-heading__eyebrow">Selected Build</span>
+            <h2 class="section-heading__title">A portfolio case study built around clarity, structure, and visual depth.</h2>
+          </div>
+
+          <article class="featured-project reveal">
+            <div class="featured-project__content">
+              <span class="featured-project__badge">Portfolio / 2026</span>
+              <h3 class="featured-project__title">Thatcher-inspired Portfolio</h3>
+              <p class="featured-project__description">
+                This landing page is not a pixel clone. It keeps the important visual signals instead: a dark
+                atmospheric background, split hero layout, showcase cards, sticky navigation, and clean section rhythm.
+              </p>
+              <p class="featured-project__result">
+                The result is a solid base for personal branding, real project content, social links, and deployment.
+              </p>
+              <div class="chip-list">
+                <span class="chip">Hero split grid</span>
+                <span class="chip">Glass cards</span>
+                <span class="chip">Scene transitions</span>
+                <span class="chip">Mobile menu</span>
+              </div>
+            </div>
+
+            <div class="featured-project__visual">
+              <div class="project-window">
+                <div class="project-window__toolbar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="project-window__body">
+                  <div class="project-window__panel project-window__panel--large"></div>
+                  <div class="project-window__grid">
+                    <div class="project-window__panel"></div>
+                    <div class="project-window__panel"></div>
+                    <div class="project-window__panel"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="page-section scene-section" id="journey" data-scene="journey">
+          <div class="section-heading reveal">
+            <span class="section-heading__eyebrow">Timeline</span>
+            <h2 class="section-heading__title">Academic Journey</h2>
+            <p class="section-heading__description">
+              Bachelor of Science in Software Engineering at Ho Chi Minh City University of Technology.
+            </p>
+          </div>
+          <div class="timeline-list">
+            <article class="timeline-card reveal">
+              <div class="timeline-card__marker" aria-hidden="true"></div>
+              <div class="timeline-card__content">
+                <span class="timeline-card__year">2025 - Present</span>
+                <h3>Frontend Product Development</h3>
+                <p>Spending most of my time on ReactJS interfaces, product interaction flows, and frontend implementation quality while studying at Ho Chi Minh City University of Technology.</p>
+              </div>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-card__marker" aria-hidden="true"></div>
+              <div class="timeline-card__content">
+                <span class="timeline-card__year">2024</span>
+                <h3>React and Full-stack Delivery</h3>
+                <p>Sharpening React ecosystem knowledge, frontend architecture habits, and backend integration skills through project delivery.</p>
+              </div>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-card__marker" aria-hidden="true"></div>
+              <div class="timeline-card__content">
+                <span class="timeline-card__year">2022</span>
+                <h3>Software Engineering Foundations</h3>
+                <p>Started formal training in Software Engineering with a strong foundation in programming, data structures, and application development.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-section scene-section" id="contact" data-scene="contact">
+          <div class="contact-grid">
+            <div class="contact-copy reveal">
+              <span class="section-heading__eyebrow">Contact</span>
+              <h2 class="contact-copy__title">Let's build something extraordinary.</h2>
+              <p class="section-heading__description">
+                Currently available for frontend engineering, React product work, and web interface collaboration.
+              </p>
+              <div class="contact-stack">
+                <a href="mailto:hungtheng2004@gmail.com">hungtheng2004@gmail.com</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/hung132004</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/hung</a>
+              </div>
+            </div>
+
+            <form class="contact-form-card reveal" id="contact-form">
+              <label class="form-field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label class="form-field">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="I want to refine the hero section, adjust project cards, and improve the personal branding direction..." required></textarea>
+              </label>
+              <button class="button-link button-link--primary" type="submit">Send message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p class="site-footer__brand">hung.dev</p>
+          <p class="site-footer__copy">&copy; <span id="year"></span> Portfolio concept built in Node.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
